@@ -1,0 +1,19 @@
+<div class='container'>
+  <%= form_for @task do |f| %>
+  <div class='form_field'>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: 'Task title' %>
+  </div>
+  <div class='form_field'>
+  <%= f.label :details %>
+  <%= f.text_field :details, placeholder: 'Task details' %>
+  </div>
+  <div class='form_field'>
+  </div>
+  <div>
+  <%= f.check_box(:completed) %>
+  <%= f.label (:completed) %>
+  <%= f.submit %>
+  <% end %>
+  </div>
+</div>
