@@ -1,9 +1,21 @@
-<h1>New Task</h1>
-
-<%= form_for @task do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title, placeholder: 'Task title' %>
-<%= f.label :details %>
-<%= f.text_field :details, placeholder: 'Task details' %>
-<%= f.submit %>
-<% end %>
+<div class='container'>
+  <h1>New Task</h1>
+  <div class='board-white'>
+    <%= form_for @task do |f| %>
+    <div class='form-field'>
+      <%= f.label :title %>
+      <%= f.text_field :title, placeholder: 'Task title' %>
+    </div>
+    <div class='form-field'>
+      <%= f.label :details %>
+      <%= f.text_field :details, placeholder: 'Task details' %>
+    </div>
+    <div class='form-field'>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+  <div class='button-left'>
+    <%= link_to 'Go back', tasks_path, class:'link button left' %>
+  </div>
+</div>

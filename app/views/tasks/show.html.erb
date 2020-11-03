@@ -2,13 +2,15 @@
   <div>
     <h1><%= @task.title %></h1>
   </div>
-  <div>
+  <div class="board-white">
     <%= @task.completed ? '✔' : '✖' %>
     <%= @task.details %>
     <%= link_to '🗑️', delete_task_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
-  <div>
-    <%= link_to 'Go back', tasks_path, class:'link' %>
+  <div class='button-left'>
+    <%= link_to 'Go back', tasks_path, class:'link button left' %>
+  </div>
+  <div class='button right'>
     <%= link_to 'Edit', edit_task_path, class:'link' %>
   </div>
 </div>

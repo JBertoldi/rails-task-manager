@@ -28,7 +28,7 @@ body {
 
 
 // form
-.form_field {
+.form-field {
   padding: 8px;
 }
 
@@ -44,7 +44,6 @@ body {
 .button {
   position: absolute;
   bottom: 8px;
-  right: 32px;
   display: flex;
   border: 2px solid rgba(77, 137, 109, 0.7);
   background-color: rgba(77, 137, 109, 0.7);
@@ -53,6 +52,14 @@ body {
   width: 100px;
   padding: 6px 10px;
   justify-content: center;
- 
+}
 
+.right {
+  position: absolute;
+  right: 32px;
+}
+
+.left {
+  position: absolute;
+  left: 32px;
 }
